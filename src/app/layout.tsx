@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Nylas - Modern Email, Calendar, and Contacts APIs',
+  title: 'Nexus - Modern Email, Calendar, and Contacts APIs',
   description: 'Build sophisticated communication features with our unified APIs',
 }
 

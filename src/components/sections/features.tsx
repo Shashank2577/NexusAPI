@@ -38,10 +38,10 @@ const features = [
 
 export function Features() {
   return (
-    <div className="relative">
+    <div className="relative mt-32 sm:mt-16 md:mt-0">
       <WavyBackground 
         className="max-w-full mx-auto" 
-        containerClassName="w-full min-h-screen relative"
+        containerClassName="w-full min-h-screen relative pt-24 md:pt-24"
         colors={["#2a2a2a", "#2b2b2b", "#2c2c2c"]}
         waveWidth={0.5}
         backgroundFill="#1a1a1a"
@@ -49,9 +49,9 @@ export function Features() {
         speed={0.5}
         waveOpacity={0.3}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-8">
               Supercharge Your Workflow Integration
             </h2>
             <p className="text-neutral-300 text-lg max-w-3xl mx-auto">

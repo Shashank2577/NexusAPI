@@ -41,8 +41,8 @@ const words = [
 
 export const Hero = () => {
   return (
-    <div className="h-screen w-full bg-transparent flex flex-col items-center justify-center overflow-hidden">
-      <div className="w-full absolute inset-0 h-screen">
+    <div className="min-h-[90vh] w-full bg-transparent flex flex-col items-center justify-center overflow-hidden py-8 md:py-24">
+      <div className="w-full absolute inset-0 h-full">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -53,32 +53,32 @@ export const Hero = () => {
           particleColor="#8B5CF6"
         />
       </div>
-      <div className="w-full flex flex-col items-center justify-center z-50">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+      <div className="w-full flex flex-col items-center justify-center z-50 space-y-8 px-4 md:px-0">
+        <h1 className="text-3xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Welcome to <span className="text-purple-500">Nexus Flow</span>
         </h1>
-        <div className="mt-4">
-          <TypewriterEffect words={words} className="text-2xl md:text-4xl" />
+        <div className="w-full">
+          <TypewriterEffect words={words} className="text-xl md:text-4xl" />
         </div>
-        <div className="mt-8 flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
           <Button
             borderRadius="1.75rem"
-            className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 w-full sm:w-auto"
           >
             Get Started
           </Button>
           <Button
             borderRadius="1.75rem"
-            className="bg-purple-500 text-white border-purple-500"
+            className="bg-purple-500 text-white border-purple-500 w-full sm:w-auto"
           >
             See Demo
           </Button>
         </div>
-        <div className="mt-12">
-          <p className="text-neutral-300 text-center mb-4">Trusted by innovative teams at</p>
-          <div className="flex gap-8 items-center justify-center">
+        <div className="space-y-4 w-full mb-8 sm:mb-0">
+          <p className="text-neutral-300 text-center">Trusted by innovative teams at</p>
+          <div className="flex flex-wrap gap-8 items-center justify-center">
             {companies.map((company) => (
-              <div key={company.name} className="relative w-24 h-12">
+              <div key={company.name} className="relative w-20 h-10 md:w-24 md:h-12">
                 <Image
                   src={company.logo}
                   alt={company.name}
