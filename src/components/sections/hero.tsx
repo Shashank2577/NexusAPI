@@ -74,9 +74,9 @@ export const Hero = () => {
             See Demo
           </Button>
         </div>
-        <div className="space-y-4 w-full mb-8 sm:mb-0">
+        <div className="space-y-4 w-full mb-16 sm:mb-0">
           <p className="text-neutral-300 text-center">Trusted by innovative teams at</p>
-          <div className="flex flex-wrap gap-8 items-center justify-center">
+          <div className="flex flex-wrap gap-8 items-center justify-center pb-8 sm:pb-0">
             {companies.map((company) => (
               <div key={company.name} className="relative w-20 h-10 md:w-24 md:h-12">
                 <Image

@@ -38,10 +38,10 @@ const features = [
 
 export function Features() {
   return (
-    <div className="relative mt-32 sm:mt-16 md:mt-0">
+    <div className="relative mt-48 sm:mt-24 md:mt-0">
       <WavyBackground 
         className="max-w-full mx-auto" 
-        containerClassName="w-full min-h-screen relative pt-24 md:pt-24"
+        containerClassName="w-full min-h-screen relative pt-32 md:pt-24"
         colors={["#2a2a2a", "#2b2b2b", "#2c2c2c"]}
         waveWidth={0.5}
         backgroundFill="#1a1a1a"
